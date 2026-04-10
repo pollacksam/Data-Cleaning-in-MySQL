@@ -1,11 +1,11 @@
 # Data-Cleaning-in-MySQL
-Based on the Data Analyst Bootcamp by Alex The Analyst, I performed a multitude of data cleaning techniques, including removing duplicate values, data standardization, dealing with null/blank values, and removing columns/rows. This project uses the dataset provided by: https://www.kaggle.com/datasets/swaptr/layoffs-2022
+Based on the Data Analyst Bootcamp by Alex The Analyst, I performed a multitude of data cleaning techniques, including removing duplicate values, data standardization, dealing with null/blank values, and removing columns/rows. This project uses the data set provided by: https://www.kaggle.com/datasets/swaptr/layoffs-2022
 
 ## A Few Notes Regarding This Data Set:
 
 Prior to performing this exploratory data analysis, we deleted, rather than imputing, all null values contained within both the total_laid_off and percentage_laid_off columns. Essentially deleting any rows with no quantitative data.
 
-Many of the total_laid_off and percentage_laid_off figures are mutually exclusively null within the dataset post-cleanup. 378 out of 1995 rows (18.9%) with null values in total_laid_off. 423 out of 1995 rows (21.2%) with null values in percentage_laid_off. 165 out of 1995 rows (8.3%) with null values in funds_raised_millions. Rather than imputing these values, we are leaving them as null, which forces SQL to exclude these data points in aggregation.
+Many of the total_laid_off and percentage_laid_off figures are mutually exclusively null within the data set post-cleanup. 378 out of 1995 rows (18.9%) with null values in total_laid_off. 423 out of 1995 rows (21.2%) with null values in percentage_laid_off. 165 out of 1995 rows (8.3%) with null values in funds_raised_millions. Rather than imputing these values, we are leaving them as null, which forces SQL to exclude these data points in aggregation.
 
 ## Key Findings:
 
@@ -19,7 +19,7 @@ Amazon saw the most layoffs, letting go 18,150 employees in the 3 years this dat
 
 The consumer industry (i.e., Google, Meta) had the most layoffs with 45,182 total employees laid off, followed by retail, ‘other,’ transportation, and finance. This lines up with the expectation that COVID would primarily impact the industries most dependent on face-to-face interactions.
 
-The United States had by far the most layoffs, with 256,559 total layoffs, followed by India (35,993), Netherlands (17,220), and Sweden (11,264). It’s worth noting that the data collected in this dataset might be slightly skewed toward US hiring trends. Further research into the data collection process is warranted.
+The United States had by far the most layoffs, with 256,559 total layoffs, followed by India (35,993), Netherlands (17,220), and Sweden (11,264). It’s worth noting that the data collected in this data set might be slightly skewed toward US hiring trends. Further research into the data collection process is warranted.
 
 A large proportion of these layoffs (~53%) were done within post-IPO staged companies. Acquired companies also laid off a significant amount of employees at 27,576 (~7%).
 
