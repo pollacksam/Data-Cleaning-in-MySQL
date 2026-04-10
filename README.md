@@ -1,5 +1,5 @@
 # Data-Cleaning-in-MySQL
-Based on the Data Analyst Bootcamp by Alex The Analyst, I performed a multitude of data cleaning techniques, including removing duplicate values, data standardization, dealing with null/blank values, and removing columns/rows. This project uses the data set provided by: https://www.kaggle.com/datasets/swaptr/layoffs-2022
+Based on the Data Analyst Bootcamp by Alex The Analyst, I performed a multitude of data cleaning techniques, including removing duplicate values, data standardization, dealing with null/blank values, and removing columns/rows. This project uses a staged table (see Data Cleaning Project.sql) derived from the data set provided by: https://www.kaggle.com/datasets/swaptr/layoffs-2022
 
 ## A Few Notes Regarding This Data Set:
 
